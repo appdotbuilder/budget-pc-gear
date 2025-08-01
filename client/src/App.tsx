@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { trpc } from '@/utils/trpc';
-import { CreateKeyboardsCategory } from '@/components/CreateKeyboardsCategory';
+
 import type { Product, Review, ProsCons } from '../../server/src/schema';
 
 // Gaming-themed color scheme
@@ -219,13 +219,7 @@ function App() {
           </div>
         </section>
 
-        {/* Keyboards Category Creation Section */}
-        <section className="mb-12">
-          <h3 className="text-2xl font-bold text-white mb-6 text-center">🔧 Admin Panel</h3>
-          <div className="max-w-md mx-auto">
-            <CreateKeyboardsCategory />
-          </div>
-        </section>
+
 
         {/* Categories grid */}
         <section className="mb-12">
